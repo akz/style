@@ -1,0 +1,190 @@
+header,
+nav,
+section,
+article,
+footer {
+	display: block;
+}
+
+body {
+	color: #333;
+	background: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+}
+
+a {
+	color: #000;
+	background: inherit;
+	text-decoration: none;
+	outline: none;
+}
+
+
+/* header */
+
+header.general,
+nav.pagination,
+section.primary,
+footer.general {
+	margin-left: 4em;
+	margin-right: 1em;
+	width: 1280px;
+	max-width: 90%;
+}
+
+header.general h1 {
+	margin-bottom: 1em;
+	border-bottom: 1px solid #000;
+	font-size: 2em;
+	font-family: "Hoefler Text", Georgia, serif;
+	line-height: 0.875;
+}
+
+header.general h1 a {
+	display: block;
+	padding: 1em 0.125em;
+	border-top: 0.125em solid #000;
+	width: 5em;
+}
+
+header.general h1 a:hover,
+header.general h1 a:focus {
+	color: #fff;
+	background: #000;
+	text-shadow: 0 -1px 0 #666;
+	transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+}
+
+
+/* nav */
+
+nav.pagination {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+nav.pagination a {
+	display: block;
+	font-size: 2em;
+}
+
+nav.pagination a:hover,
+nav.pagination a:focus {
+	color: #fff;
+	background: #000;
+	/*text-shadow: -1.5em 0 0 #fff, 1.5em 0 0 #fff;*/
+	transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+}
+
+
+/* section */
+
+section.primary {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+section.primary article {
+	position: relative;
+}
+
+article h1 {
+	position: absolute;
+	top: 0.25em;
+	right: 0.5em;
+	color: transparent;
+	background: inherit;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+article:hover h1 {
+	color: #fff;
+	background: inherit;
+	text-shadow: 0 0 1px #000;
+	transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+}
+
+article img {
+	max-width: 100%;
+}
+
+article footer {
+	position: absolute;
+	bottom: 0.5em;
+	left: 1em;
+}
+
+article footer a {
+	color: transparent;
+	background: inherit;
+}
+
+article:hover footer a,
+article footer a:focus {
+	color: #fff;
+	background: inherit;
+	text-decoration: underline;
+	text-shadow: 0 0 1px #000;
+	transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+}
+
+
+/* footer */
+
+footer.general {
+	padding: 1em 0;
+	border-top: 1px solid #000;
+}
+
+footer.general p,
+footer.general p a {
+	color: #aaa;
+	background: inherit;
+}
+
+footer.general p {
+	padding: 0 0.285em;
+	font-size: 0.875em;
+}
+
+footer.general p a:hover,
+footer.general p a:focus {
+	color: #fff;
+	background: #000;
+	text-decoration: none;
+	transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+}
+
+footer.general:hover p {
+	color: #000;
+	background: inherit;
+}
+
+footer.general:hover a {
+	color: #000;
+	background: inherit;
+	text-decoration: underline;
+}
+
+footer.general:hover a:hover,
+footer.general:hover a:focus {
+	text-decoration: none;
+}
