@@ -28,15 +28,18 @@ nav.pagination,
 section.primary,
 footer.general {
 	margin-left: 4em;
-	margin-right: 1em;
+	margin-right: 4em;
 	width: 1280px;
 	max-width: 90%;
 }
 
-header.general h1 {
-	margin-bottom: 1em;
+header.general {
+	margin-bottom: 2em;
 	border-bottom: 1px solid #000;
-	font-size: 2em;
+}
+
+header.general h1 {
+	font-size: 200%;
 	font-family: "Hoefler Text", Georgia, serif;
 	line-height: 0.875;
 }
@@ -63,14 +66,14 @@ header.general h1 a:focus {
 /* nav */
 
 nav.pagination {
-	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
 	text-align: center;
 }
 
 nav.pagination a {
 	display: block;
-	font-size: 2em;
+	font-size: 200%;
 }
 
 nav.pagination a:hover,
@@ -97,19 +100,19 @@ section.primary article {
 }
 
 article h1 {
+	visibility: hidden;
 	position: absolute;
 	top: 0.25em;
 	right: 0.5em;
-	color: transparent;
+	color: #fff;
 	background: inherit;
-	font-size: 3em;
+	font-size: 300%;
 	font-weight: bold;
+	text-shadow: 0 0 1px #000;
 }
 
 article:hover h1 {
-	color: #fff;
-	background: inherit;
-	text-shadow: 0 0 1px #000;
+	visibility: visible;
 	transition: all 0.25s ease;
 	-moz-transition: all 0.25s ease;
 	-webkit-transition: all 0.25s ease;
@@ -122,21 +125,22 @@ article img {
 
 article footer {
 	position: absolute;
-	bottom: 0.5em;
+	bottom: 1em;
 	left: 1em;
 }
 
 article footer a {
-	color: transparent;
+	visibility: hidden;
+	color: #fff;
 	background: inherit;
+	font-weight: bold;
+	text-decoration: underline;
+	text-shadow: 0 0 1px #000;
 }
 
 article:hover footer a,
 article footer a:focus {
-	color: #fff;
-	background: inherit;
-	text-decoration: underline;
-	text-shadow: 0 0 1px #000;
+	visibility: visible;
 	transition: all 0.25s ease;
 	-moz-transition: all 0.25s ease;
 	-webkit-transition: all 0.25s ease;
@@ -159,7 +163,7 @@ footer.general p a {
 
 footer.general p {
 	padding: 0 0.285em;
-	font-size: 0.875em;
+	font-size: 87.5%;
 }
 
 footer.general p a:hover,
