@@ -1,3 +1,5 @@
+/* @override http://resource.exptokyo.com/style/com.exptokyo.shunkan.css */
+
 header,
 nav,
 section,
@@ -27,18 +29,42 @@ header.general,
 nav.pagination,
 section.primary,
 footer.general {
-	margin-left: 4em;
-	margin-right: 4em;
+	margin-left: 2.5em;
+	margin-right: 2.5em;
 	width: 1280px;
-	max-width: 90%;
+	max-width: 87.5%;
+}
+
+#home header.general,
+#home nav.pagination,
+#home section.primary,
+#home footer.general {
+	width: 960px;
+}
+
+header.general,
+nav.pagination,
+footer.general {
+	width: 960px;
+	max-width: 65.625%;
+	margin-left: 22.5em;
+}
+
+#home header.general,
+#home nav.pagination,
+#home footer.general {
+	width: 640px;
 }
 
 header.general {
+	float: left;
 	margin-bottom: 2em;
 	border-bottom: 1px solid #000;
 }
 
 header.general h1 {
+	float: left;
+	margin-right: 5em;
 	font-size: 200%;
 	font-family: "Hoefler Text", Georgia, serif;
 	line-height: 0.875;
@@ -46,7 +72,7 @@ header.general h1 {
 
 header.general h1 a {
 	display: block;
-	padding: 1em 0.125em;
+	padding: 1em 0;
 	border-top: 0.125em solid #000;
 	width: 5em;
 }
@@ -66,6 +92,7 @@ header.general h1 a:focus {
 /* nav */
 
 nav.pagination {
+	clear: left;
 	margin-top: 2em;
 	margin-bottom: 2em;
 	text-align: center;
@@ -91,12 +118,14 @@ nav.pagination a:focus {
 /* section */
 
 section.primary {
+	clear: left;
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
 
 section.primary article {
 	position: relative;
+	text-align: right;
 }
 
 article h1 {
@@ -106,7 +135,7 @@ article h1 {
 	right: 0.5em;
 	color: #fff;
 	background: inherit;
-	font-size: 300%;
+	font-size: 200%;
 	font-weight: bold;
 	text-shadow: 0 0 1px #000;
 }
