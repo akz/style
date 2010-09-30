@@ -1,5 +1,3 @@
-/* @override http://resource.exptokyo.com/style/com.exptokyo.shunkan.css */
-
 header,
 nav,
 section,
@@ -31,29 +29,31 @@ section.primary,
 footer.general {
 	margin-left: 2.5em;
 	margin-right: 2.5em;
-	width: 1280px;
-	max-width: 87.5%;
+	width: 80em;
+	max-width: 1280px;
 }
 
 #home header.general,
 #home nav.pagination,
 #home section.primary,
 #home footer.general {
-	width: 960px;
+	width: 60em;
+	max-width: 960px;
 }
 
 header.general,
 nav.pagination,
 footer.general {
-	width: 960px;
-	max-width: 65.625%;
+	width: 60em;
+	max-width: 960px;
 	margin-left: 22.5em;
 }
 
 #home header.general,
 #home nav.pagination,
 #home footer.general {
-	width: 640px;
+	width: 40em;
+	max-width: 640px;
 }
 
 header.general {
@@ -191,7 +191,6 @@ footer.general p a {
 }
 
 footer.general p {
-	padding: 0 0.285em;
 	font-size: 87.5%;
 }
 
